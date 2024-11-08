@@ -10,6 +10,12 @@
     border-radius: 50%;
     padding: 10px; /* Opcional: agrega un espacio alrededor del icono */
   }
+  .carousel-image {
+    width: 100%;           /* Hace que las imágenes se ajusten al ancho del contenedor */
+    max-height: 500px;     /* Controla la altura máxima para todas las imágenes */
+    object-fit: cover;     /* Asegura que las imágenes se ajusten y rellenen el área sin distorsión */
+}
+
   
   h1 {
       font-size: 2.5rem;
