@@ -22,3 +22,18 @@
   <h1>Contáctanos</h1>
   <app-formulario></app-formulario>
 </div>
+<h2>Nuestros Técnicos</h2>
+<div class="row">
+  <div *ngFor="let tecnico of tecnicos" class="col-md-4 mb-4">
+    <div class="card">
+      <img [src]="tecnico.imagen" class="card-img-top" [alt]="tecnico.nombre">
+      <div class="card-body">
+        <h5 class="card-title">{{ tecnico.nombre }}</h5>
+        <p class="card-text">
+          <strong>Especialidad:</strong> {{ tecnico.especialidad }} <br>
+          <strong>Experiencia:</strong> {{ tecnico.experiencia }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

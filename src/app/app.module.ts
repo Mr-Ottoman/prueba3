@@ -14,6 +14,8 @@ import { SWOficinaComponent } from './especialidades/swoficina/swoficina.compone
 import { ReparacionComponent } from './especialidades/reparacion/reparacion.component';
 import { EspecialidadesComponent } from './especialidades/especialidades.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { ServiciosComponent } from './componente/servicios/servicios.component';
+import { ServiciosService } from './services/servicios.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { FormularioComponent } from './formulario/formulario.component';
     SWOficinaComponent,
     ReparacionComponent,
     EspecialidadesComponent,
-    FormularioComponent
+    FormularioComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,

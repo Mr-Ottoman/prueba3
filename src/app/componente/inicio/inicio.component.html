@@ -21,6 +21,45 @@
       </li>
     </ul>
   </div>
+   <!-- Servicio más vendido -->
+   <div class="card mt-4" style="max-width: 700px; margin: 0 auto;">
+    <h1>Nuestro producto mas vendido</h1><br>
+    <img src="assets/img/ofertawin10.avif" class="card-img-top" alt="Windows 10 Pro">
+    <div class="card-body">
+      <h5 class="card-title">Instalación Windows 10 PRO</h5>
+      <p class="card-text">
+        Servicio de instalación profesional de Windows 10 PRO. Garantizamos una instalación rápida, segura y optimizada para su equipo.
+      </p>
+      <p class="card-text text-danger fw-bold">$15.000 + IVA</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detalleModal">
+        Detalle
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal de Detalle -->
+  <div class="modal fade" id="detalleModal" tabindex="-1" aria-labelledby="detalleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="detalleModalLabel">Detalle del Servicio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ol>
+            <li>Instalación de Windows 10 PRO desde medios originales.</li>
+            <li>Configuración inicial de cuentas de usuario.</li>
+            <li>Optimización de arranque y rendimiento.</li>
+            <li>Instalación de controladores y actualizaciones.</li>
+            <li>Asesoría post-instalación y soporte técnico básico.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <app-formulario></app-formulario>

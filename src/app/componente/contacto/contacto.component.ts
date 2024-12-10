@@ -1,32 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup} from '@angular/forms';
+import { TecnicosService } from '../../services/tecnicos.service'; // Asegúrate de que la ruta sea correcta
 
 @Component({
   selector: 'app-contacto',
   templateUrl: './contacto.component.html',
-  styleUrl: './contacto.component.css'
+  styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent implements OnInit {
-  formularioForm: FormGroup;
+  tecnicos: any[] = []; // Declaración de la propiedad 'tecnicos'
 
-  constructor(private formBuilder: FormBuilder) {
-    this.formularioForm = this.formBuilder.group({
-      nombre: '',
-      apellido: '',
-      correo: '',
-      telefono: '',
-      mensaje: '', 
-    });
-  }
+  constructor(private tecnicosService: TecnicosService) {}
 
-  ngOnInit() {
-    console.log("Ejecutando el ngOnInit");
+  ngOnInit(): void {
+    // Llamada al servicio para obtener los técnicos
+    this.tecnicos = this.tecnicosService.obtenerTecnicos();
   }
-
-  enviarDatos() {
-    if (this.formularioForm.valid) {
-      let datos_formulario = this.formularioForm.value;
-      console.log('Datos del formulario:', datos_formulario);
-  }
-}
 }

@@ -7,6 +7,7 @@ import { InstalacionOSComponent } from './especialidades/instalacion-os/instalac
 import { ReparacionComponent } from './especialidades/reparacion/reparacion.component';
 import { SWOficinaComponent } from './especialidades/swoficina/swoficina.component';
 import { EspecialidadesComponent } from './especialidades/especialidades.component';
+import { ServiciosComponent } from './componente/servicios/servicios.component';
 
 const routes: Routes = [
   
@@ -22,6 +23,9 @@ const routes: Routes = [
      component:UbicacionComponent 
 
   },
+  { path: 'servicios', component: ServiciosComponent
+    
+   },
   { path: "contacto",
      component:ContactoComponent
 
